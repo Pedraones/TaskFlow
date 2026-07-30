@@ -1,7 +1,7 @@
 import z from "zod";
 
 export const otpSchema = z.object({
-   code_otp: z.number(),
+   code_otp: z.string(),
    moment_generate: z.iso.datetime(),
-   time_expiration: z.number()
+   moment_expire: z.number()
 });
