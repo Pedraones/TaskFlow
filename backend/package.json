@@ -12,6 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "bcrypt-node": "^0.1.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "csrf-csrf": "^3.2.2",
