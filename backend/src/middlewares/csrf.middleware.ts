@@ -19,7 +19,7 @@ export const csrfProtection: RequestHandler = (req, res, next) => {
     req.headers["x-csrf-token"] = decodeURIComponent(csrfHeader as string);
   }
 
-  const ignoredRoutes = ["/api/auth/login", "/api/auth/register"];
+  const ignoredRoutes = ["/api/auth/login", "/api/auth/register", "/api/auth/forgot-password"];
 
   if (ignoredRoutes.includes(req.path)) {
     return next();
